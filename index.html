@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin:0px;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #1c1c1c;
+        /* background-image: url('https://www.patriotsoftware.com/wp-content/uploads/2016/01/how-to-gross-up-payroll.jpg');
+    } */}
+    #container{
+        height: 90%;
+        width: 400px;
+        display:flex;
+        flex-direction: column;
+        margin:auto;
+    }
+    input{
+        background-color:#1c1c1c;
+       
+        border: none;
+        outline: none;
+        font-size: 64px;
+        color:whitesmoke;
+        padding:0px 32px;
+       flex-grow: 1;
+
+     text-align: right;  
+    }
+    .button-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+        gap: 5px;
+        flex-grow: 2;
+    }
+    button{
+        border-radius: 100%;
+        width: 90%;
+        height: 75%;
+        place-self : center;
+        font-size : 28px;
+        cursor: pointer;
+        color: whitesmoke;
+        background-color: #505050;
+        transition-property: transform;
+        transition-duration: 200ms;
+    }
+    button:active{
+        transform: scale(0.85);
+    }
+    .gray-button{
+        background-color: #d4d4d4;
+        color:#1c1c1c;
+    }
+    .yellow-button{
+        background-color: orange;
+        color: whitesmoke;
+    }
+    .zero{
+        grid-column:span 2;
+        border-radius: 35%;
+        width: 200px;
+    }
+
+</style>
+<body>
+    
+    <div id="container">
+        <input type="text" name="" id="">
+        <div class="button-grid">
+            <button class="gray-button">C</button>
+            <button class="gray-button">**</button>
+            <button class="gray-button">%</button>
+            <button class="yellow-button">/</button>
+
+<button>7</button>
+<button>8</button>
+<button>9</button>
+<button  class="yellow-button">*</button>
+
+
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<button class="yellow-button">-</button>
+
+
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button class="yellow-button">+</button>
+
+<button class="zero">0</button>
+<button>.</button>
+<button class="yellow-button">=</button>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="cal.js"></script>
+</body>
+</html>
